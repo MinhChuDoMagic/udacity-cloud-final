@@ -24,7 +24,7 @@ jobs:
       - run: npm run lint
         working-directory: starter/frontend
 
-      - run: npm test
+      - run: CI=true npm test
         working-directory: starter/frontend
 
   build:
